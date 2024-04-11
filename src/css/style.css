@@ -3,20 +3,24 @@
     --secondary-color: #704264;
     --tertiary-color: #BB8493;
     --quaternary-color: #DBAFA0;
-    --gradient-color: linear-gradient(155deg, var(--primary-color) 19%, var(--secondary-color) 45%, var(--tertiary-color) 75%, var(--quaternary-color) 98%);
+    --gradient-color: linear-gradient(155deg, var(--primary-color) 19%, var(--secondary-color) 45%, var(--tertiary-color) 75%, var(--quaternary-color) 100%);
     --icon-color-filter: invert(88%) sepia(21%) saturate(886%) hue-rotate(308deg) brightness(89%) contrast(91%);
 }
 
 
-/* BODY */
+/* BODY GENERAL */
+
 
 body a {
     text-decoration: none;
 }
 
+
+/* BODY GENERAL - END */
 /* HEADER */
 
-header {
+
+.header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding: 1rem;
@@ -37,9 +41,10 @@ header {
 .anchor__icon {
     height: 2rem;
     margin: 0.2rem;
+    filter: var(--icon-color-filter) drop-shadow(2px 2px 3px var(--secondary-color));
 }
 
-/* HEADER MENU */
+/* HEADER - MENU */
 
 .container__header__menu {
     width: 2rem;
@@ -55,9 +60,10 @@ header {
     background-image: url(../assets/icons/bars-solid.svg);
     background-repeat: no-repeat;
     background-position: left;
+    filter: var(--icon-color-filter);
 }
 
-/* LOGO & TITLE */
+/* HEADER - LOGO & TITLE */
 
 .container__header__title {
     display: flex;
@@ -73,7 +79,7 @@ header {
     color: var(--quaternary-color);
 }
 
-/* USER AREA */
+/* HEADER - USER AREA */
 
 .container__user__area {
     display: flex;
@@ -82,17 +88,51 @@ header {
     margin-left: 0.5rem;
 }
 
+
+/* HEADER - END */
+/* MAIN */
+
+
 /* SEARCH */
 
-.header__search__bar {
-    display: none;
-    max-width: 75%;
+.container__user__search {
+    padding: 2%;
+    background: var(--gradient-color);
+    transform: scaleY(-1);
 }
 
 .user__anchor__search {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     gap: 1rem;
-    font-size: 3rem;
+    transform: scaleY(-1);
 }
+
+.header__search__bar {
+    width: 70vw;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
+    border-radius: 24px;
+    color: var(--tertiary-color);
+    padding: 1em;
+}
+
+.header__search__bar::placeholder {
+    color: var(--tertiary-color);
+    font-weight: 700;
+}
+
+
+/* MAIN - END */
+/* FOOTER */
+
+
+.footer {
+    width: 100vw;
+    background-color: var(--gradient-color);
+    padding: 1rem;
+}
+
+
+/* FOOTER - END */
