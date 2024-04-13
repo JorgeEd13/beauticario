@@ -2,6 +2,7 @@
 @import url(../css/styles/main/search.css);
 @import url(../css/styles/main/promotions/promoContainer.css);
 @import url(../css/styles/main/promotions/timedCarousel.css);
+@import url(../css/styles/main/promotions/userCarousel.css);
 
 
 :root {
@@ -28,104 +29,6 @@ body a {
 
 /* BODY GENERAL - END */
 /* MAIN */
-
-
-/* PROMOTIONS - USER CAROUSEL */
-
-.container__user__carousel {
-    display: grid;
-    grid-template-rows: repeat(10, 10vw);
-    grid-template-columns: repeat(10, 10vw);
-}
-
-.product__line {
-    grid-area: 1 / 1 / 2 / -1;
-    display: flex;
-    align-items: center;
-    margin: 1% 0;
-    padding-left: 2%;
-    color: var(--quaternary-color);
-    font-weight: 700;
-    background: linear-gradient(to left, transparent, var(--secondary-color));
-}
-
-/* PROMOTIONS - USER CAROUSEL - IMAGES */
-
-.container__user__carousel .container__user__products {
-    grid-area: 2 / 2 / -2 / -2;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-}
-
-.container__user__products .containter__product__card {
-    width: 200px;
-    min-width: 200px;
-    height: 100%;
-    background-color: var(--secondary-color);
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: repeat(7, 1fr);
-}
-
-.product__favorite {
-    grid-area: 1 / 1 / 2  / 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.product__favorite .product__favorite__img {
-    margin: 5%;
-    padding: 15%;
-    border: 1px solid;
-    border-radius: 50%;
-    filter: var(--filter-quaternary);
-}
-
-.product__image {
-    grid-area: 1 / 2 / 6 / -2;
-    height: 80%;
-}
-
-.product__image .user__carousel__img {
-    width: 100%;
-    height: 100%;
-}
-
-.product__info {
-    grid-area: -4 / 1 / -1 / -1;
-    margin: 5px;
-    border: 1px solid;
-    border-top-color: var(--primary-color);
-    border-right-color: var(--primary-color);
-    border-left-color: var(--tertiary-color);
-    border-bottom-color: var(--tertiary-color);
-}
-
-.product__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 5px 0 0 5px;
-}
-
-.product__title .product__line__card {
-    font-weight: 600;
-    font-size: 0.7rem;
-}
-
-.product__title .product__name__card {
-    font-size: 0.8rem;
-}
-
-.product__description {
-    margin-top: 5px;
-    padding: 5px;
-    font-size: 0.7rem;
-}
 
 
 /* MAIN - END */
