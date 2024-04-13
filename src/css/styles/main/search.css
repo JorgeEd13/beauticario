@@ -1,0 +1,29 @@
+/* SEARCH */
+
+.container__user__search {
+    padding: 2%;
+    background: var(--gradient-color);
+    transform: scaleY(-1);
+}
+
+.user__anchor__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    transform: scaleY(-1);
+}
+
+.header__search__bar {
+    width: 70vw;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
+    border-radius: 24px;
+    color: var(--tertiary-color);
+    padding: 1em;
+}
+
+.header__search__bar::placeholder {
+    color: var(--tertiary-color);
+    font-weight: 700;
+}
