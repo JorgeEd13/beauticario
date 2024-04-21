@@ -1,42 +1,56 @@
+let timeInterval = 5000; // time in milliseconds to the timed carousel image change automatically
+
 // gets timed carousel elements
 const timed__inputs = document.querySelectorAll('.timed__carousel__input');
 const timed__images = Array.from(document.querySelectorAll('.timed__carousel__img'));
 
-// gets user carousel
-// const user__slider = document.querySelector('.container__user__images');
+// automatically changes the image in timed carousel every 'timeInterval' milliseconds
+setInterval(autoChangeImageTimed, timeInterval);
 
-// const dragging = (e) => {
-//     console.log()
-// }
-
-// change image in timed carousel when directly selected
+// manually changes the image in timed carousel when directly selected
 timed__inputs.forEach((selection, inputIndex) => {
     selection.addEventListener('click', () => {
-        changeImageTimed(inputIndex);
+        manualChangeImageTimed(inputIndex);
     });
 });
 
-// user__slider.addEventListener('mousemove', dragging);
+function autoChangeImageTimed() {
+    let selected__image = document.querySelector('.timed__carousel__img__active');
+    let previousImageIndex = timed__images.indexOf(selected__image);
 
-function changeImageTimed(index) {
+    if (previousImageIndex == timed__images.length -1) {
+        previousImageIndex = -1;
+    }
+    previousImageIndex ++;
+    selected__image.classList.remove('timed__carousel__img__active');
+    timed__images[previousImageIndex].classList.add('timed__carousel__img__active');
+    timed__inputs[previousImageIndex].checked = true;
+}
+
+function manualChangeImageTimed(index) {
     let selected__image = document.querySelector('.timed__carousel__img__active');
     let previousImageIndex = timed__images.indexOf(selected__image);
 
     // if left arrow is clicked
-    if (index == timed__images.length && previousImageIndex > 0) {
+    if (index == timed__images.length) {
+        if (previousImageIndex == 0) {
+            previousImageIndex = timed__images.length;
+        }
         selected__image.classList.remove('timed__carousel__img__active'); // removes 'active' status from previous image
         timed__images[previousImageIndex - 1].classList.add('timed__carousel__img__active'); // adds 'active' status to new image
         timed__inputs[previousImageIndex - 1].checked = true; // highlights correspondent input
 
         // if right arrow is clicked
-    } else if (index == timed__images.length + 1 && previousImageIndex < timed__images.length - 1) {
+    } else if (index == timed__images.length + 1) {
+        if (previousImageIndex == timed__images.length - 1) {
+            previousImageIndex = -1;
+        }
         selected__image.classList.remove('timed__carousel__img__active');
         timed__images[previousImageIndex + 1].classList.add('timed__carousel__img__active');
         timed__inputs[previousImageIndex + 1].checked = true;
 
     } else if (index >= 0 && index < timed__images.length) {
         selected__image.classList.remove('timed__carousel__img__active');
-        // adds 'active' status to selected image
-        timed__images[index].classList.add('timed__carousel__img__active');
+        timed__images[index].classList.add('timed__carousel__img__active'); // adds 'active' status to selected image
     }
 }

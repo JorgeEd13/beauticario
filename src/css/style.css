@@ -28,18 +28,13 @@ body a {
 
 
 /* BODY GENERAL - END */
-/* MAIN */
-
-
-/* MAIN - END */
 /* FOOTER */
 
 
-/* .footer {
-    width: 100vw;
-    background-color: var(--gradient-color);
+.footer {
+    background: var(--gradient-color);
     padding: 1em;
-} */
+}
 
 
 /* FOOTER - END */
