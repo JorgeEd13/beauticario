@@ -26,6 +26,10 @@ body a {
     text-decoration: none;
 }
 
+body a:visited {
+    color: #000;
+}
+
 
 /* BODY GENERAL - END */
 /* FOOTER */

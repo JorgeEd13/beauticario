@@ -61,6 +61,10 @@
     filter: drop-shadow(2px 2px 3px var(--secondary-color));
 }
 
+.header__title__anchor:visited {
+    color: var(--quaternary-color);
+}
+
 /* HEADER - USER AREA */
 
 .container__user__area {

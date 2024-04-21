@@ -40,16 +40,16 @@ userCarouselJson.forEach((createLine, indexLine) => {
                     <div class="product__favorite">
                         <img class="product__favorite__img" src="./src/assets/icons/favorites.svg" alt="Adicionar produtos aos favoritos">
                     </div>
-                    <div class="product__image">
+                    <a class="product__image" href="${createCard.link}">
                         <img class="user__carousel__img" src="${createCard.src}" alt="${createCard.alt}">
-                    </div>
-                    <div class="product__info">
+                    </a>
+                    <a class="product__info" href="${createCard.link}">
                         <div class="product__title">
                             <h3 class="product__line__card">${createCard.name}</h3>
                             <h4 class="product__name__card">${createCard.line}</h4>
                             <p class="product__description">${createCard.description}</p>
                         </div>
-                    </div>
+                    </a>
                 </div>`;
         });
 });

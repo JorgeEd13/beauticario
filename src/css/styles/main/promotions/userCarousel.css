@@ -57,12 +57,12 @@
 
 /* PROMOTIONS - USER CAROUSEL - IMAGE */
 
-.product__image {
+a.product__image {
     grid-area: 1 / 2 / 6 / -2;
     height: 80%;
 }
 
-.product__image .user__carousel__img {
+a.product__image .user__carousel__img {
     width: 100%;
     height: 100%;
 }
