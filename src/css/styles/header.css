@@ -27,10 +27,31 @@
 
 /* HEADER - MENU */
 
-.container__header__menu {
+.container__header__hamburger {
     width: 2em;
     display: flex;
     align-items: center;
+}
+
+.container__header__menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 50px;
+    padding: 10px;
+    background: var(--gradient-color-menu);
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.menu__list__item {
+    padding: 5px;
+    border-block: 1px solid;
 }
 
 .menu__mobile {
@@ -87,7 +108,7 @@
         height: 10vw;
     }
 
-    .container__header__menu {
+    .container__header__hamburger {
         width: 100%;
         margin-left: 2vw;
     }

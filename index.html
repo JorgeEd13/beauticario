@@ -14,8 +14,30 @@
 <body>
     <header class="header">
         <!-- MENU -->
-        <div class="container__header__menu">
+        <div class="container__header__hamburger">
             <input type="button" class="menu__mobile">
+        </div>
+        <div class="container__header__menu">
+            <ul class="menu__list">
+                <li class="menu__list__item">
+                    <a class="menu__list__link" href="#">LANÇAMENTOS</a>
+                </li>
+                <li class="menu__list__item">
+                    <a class="menu__list__link" href="#">SKINCARE</a>
+                </li>
+                <li class="menu__list__item">
+                    <a class="menu__list__link" href="#">MAKE</a>
+                </li>
+                <li class="menu__list__item">
+                    <a class="menu__list__link" href="#">CORPO E BANHO</a>
+                </li>
+                <li class="menu__list__item">
+                    <a class="menu__list__link" href="#">PERFUMARIA</a>
+                </li>
+                <li class="menu__list__item">
+                    <a class="menu__list__link" href="#">PETS</a>
+                </li>
+            </ul>
         </div>
         <!-- LOGO & TITLE -->
         <div class="container__header__title">
@@ -77,7 +99,9 @@
         </section>
     </footer>
 
-    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/main.js"></script>  <!-- imports the json files and directs the data -->
+    <script src="./src/js/create.js"></script>              <!-- use the import data to create the sliders -->
+    <script src="./src/js/carousels.js"></script>           <!-- hold the functions for the sliders -->
 </body>
 
 </html>
