@@ -83,3 +83,10 @@
     padding: 20% 20% 0 0;
     filter: var(--filter-secundary) drop-shadow(32px 32px 32px var(--secondary-color));
 }
+
+@media screen and (min-width: 426px) {
+    .container__timed__carousel {
+        grid-template-rows: repeat(10, 7vw);
+        grid-template-columns: repeat(10, 8vw);
+    }
+}

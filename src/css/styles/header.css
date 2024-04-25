@@ -37,7 +37,8 @@
     display: none;
     position: absolute;
     z-index: 1;
-    margin-top: 50px;
+    left: 2.5vw;
+    margin-top: 2.87em;
     padding: 10px;
     background: var(--gradient-color-menu);
 }
@@ -55,6 +56,7 @@
 }
 
 .menu__mobile {
+    z-index: 2;
     height: 2.5em;
     width: 2.5em;
     border: none;
@@ -64,6 +66,27 @@
     background-position: left;
     filter: var(--filter-quaternary);
 }
+
+.menu__mobile__background {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 2.5vw;
+    width: 12vw;
+    max-width: 50px;
+    height: 2.5em;
+    background: var(--gradient-color-icon);
+}
+
+.menu__mobile.active {
+    filter: none;
+}
+
+.container__header__menu.active,
+.menu__mobile__background.active {
+    display: block;
+}
+
 
 /* HEADER - LOGO & TITLE */
 
@@ -124,6 +147,63 @@
 
 }
 
-/* @media screen and (min-width: 769px) {
+@media screen and (min-width: 500px) {
+    .container__header__menu {
+        margin-top: calc(16px + 5.25vw);
+    }
+}
 
-} */
+@media screen and (min-width: 769px) {
+    .header {
+        width: 100vw;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 3fr 2fr;
+        padding: 0;
+    }
+    
+    .container__header__hamburger {
+        display: none;
+    }
+
+    .container__header__title {
+        grid-area: 1 / 1 / 2 / 2;
+        justify-content: center;
+        margin: 1.5em;
+    }
+    
+    .container__user__area {
+        grid-area: 1 / 2 / -2 / -1;
+        justify-content: center;
+        margin: 1.5em;
+    }
+
+    .anchor__icon {
+        height: 3em;
+    }
+
+    .container__header__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        grid-area: 2 / 1 / -1 / -1;
+        left: 0;
+        margin-top: 0;
+        padding: 0;
+        background: none;
+    }
+
+    .menu__list {
+        flex-direction: row;
+        gap: 15px;
+        background-image: var(--gradient-color-text);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu__list__item {
+        font-size: 1.5rem;
+    }
+}

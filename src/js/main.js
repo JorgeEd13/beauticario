@@ -1,6 +1,19 @@
 import timedCarouselJson from '../data/timedCarousel.json' with {type: "json"};
 import userCarouselJson from '../data/userCarousel.json' with {type: "json"};
 
+const btnMenu = document.getElementById('menu__mobile');
+
+btnMenu.addEventListener('click', toggleMenu);
+
+// open the mobile menu
+function toggleMenu() {
+    const menu = document.getElementById('container__header__menu');
+    const span = document.getElementById('menu__mobile__background');
+    btnMenu.classList.toggle('active');
+    span.classList.toggle('active');
+    menu.classList.toggle('active');
+}
+
 createSliders(timedCarouselJson, userCarouselJson);
 
 // gets timed carousel elements

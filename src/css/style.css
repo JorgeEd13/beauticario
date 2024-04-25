@@ -11,6 +11,8 @@
     --tertiary-color: #BB8493;
     --quaternary-color: #DBAFA0;
     --gradient-color: linear-gradient(155deg, var(--primary-color) 19%, var(--secondary-color) 45%, var(--tertiary-color) 75%, var(--quaternary-color) 100%);
+    --gradient-color-icon: linear-gradient(185deg, var(--primary-color) 19%, var(--secondary-color) 45%, var(--tertiary-color) 75%, var(--quaternary-color) 100%);
+    --gradient-color-text: linear-gradient(205deg, var(--primary-color) 0%, var(--secondary-color) 40%, var(--tertiary-color) 42%, var(--quaternary-color) 81%);
     --gradient-color-menu: linear-gradient(315deg, var(--primary-color) 19%, var(--secondary-color) 45%, var(--tertiary-color) 75%, var(--quaternary-color) 100%);
     --filter-secundary: invert(28%) sepia(7%) saturate(3155%) hue-rotate(263deg) brightness(93%) contrast(83%);
     --filter-quaternary: invert(88%) sepia(21%) saturate(886%) hue-rotate(308deg) brightness(89%) contrast(91%);
@@ -21,6 +23,9 @@
 
 body {
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body a {
@@ -37,8 +42,9 @@ body a:visited {
 
 
 .footer {
+    width: 100%;
     background: var(--gradient-color);
-    padding: 1em;
+    padding-top: 2em;
     margin-top: 10vw;
 }
 
