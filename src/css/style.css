@@ -28,11 +28,12 @@ body {
     align-items: center;
 }
 
-body a {
+a {
+    color: #000;
     text-decoration: none;
 }
 
-body a:visited {
+a:visited {
     color: #000;
 }
 
