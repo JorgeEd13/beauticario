@@ -52,7 +52,12 @@
 
 .menu__list__item {
     padding: 5px;
-    border-block: 1px solid;
+    border-block: 1px solid white;
+}
+
+.menu__list__item a,
+.menu__list__item a:visited {
+    color: white;
 }
 
 .menu__mobile {
@@ -79,7 +84,7 @@
 }
 
 .menu__mobile.active {
-    filter: none;
+    filter: invert();
 }
 
 .container__header__menu.active,
