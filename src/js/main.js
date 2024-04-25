@@ -1,6 +1,6 @@
 const fetchCreateJSON = async () => {
-    await fetch('../src/data/timedCarousel.json').then((response) => response.json()).then((timedCarouselJson) => createTimedCarousel(timedCarouselJson));
-    await fetch('../src/data/userCarousel.json').then((response) => response.json()).then((userCarouselJson) => createUserCarousel(userCarouselJson));
+    await fetch('./src/data/timedCarousel.json').then((response) => response.json()).then((timedCarouselJson) => createTimedCarousel(timedCarouselJson));
+    await fetch('./src/data/userCarousel.json').then((response) => response.json()).then((userCarouselJson) => createUserCarousel(userCarouselJson));
 }
 
 fetchCreateJSON();
