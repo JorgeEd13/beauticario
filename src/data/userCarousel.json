@@ -1,0 +1,60 @@
+[{
+    "type": "Batons",
+    "class": "lipstick",
+    "products": [
+        {
+            "name": "Batom Intense Red Bight",
+            "line": "Intense",
+            "title": "LIPSTICK INTENSE RED BRIGHT",
+            "src": "./src/assets/images/user carousel/product - lipstick/lipstck-intense-red-bright.jpg",
+            "alt": "Imagem de batom da linha Intense na cor vermelho vivo",
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus est temporibus, rerum odio ipsa reprehenderit?",
+            "link": "#"
+        },
+        {
+            "name": "Batom Intense Brown Dark",
+            "line": "Intense",
+            "title": "LIPSTICK INTENSE BROWN DARK",
+            "src": "./src/assets/images/user carousel/product - lipstick/lipstick-intense-brown-dark.jpg",
+            "alt": "Imagem de batom da linha Intense na cor marrom escuro",
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus est temporibus, rerum odio ipsa reprehenderit?",
+            "link": "#"
+        },
+        {
+            "name": "Batom Intense Brown Light",
+            "line": "Intense",
+            "title": "LIPSTICK INTENSE BROWN LIGHT",
+            "src": "./src/assets/images/user carousel/product - lipstick/lipstick-intense-brown-light.jpg",
+            "alt": "Imagem de batom da linha Intense na cor marrom claro",
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus est temporibus, rerum odio ipsa reprehenderit?",
+            "link": "#"
+        },
+        {
+            "name": "Batom Make B Brown Dark",
+            "line": "Make B",
+            "title": "LIPSTICK MAKE B BROWN DARK",
+            "src": "./src/assets/images/user carousel/product - lipstick/lipstick-makeb-brown-dark.jpg",
+            "alt": "Imagem de batom da linha Make B na cor marrom escuro",
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus est temporibus, rerum odio ipsa reprehenderit?",
+            "link": "#"
+        },
+        {
+            "name": "Batom Make B Brown Light",
+            "line": "Make B",
+            "title": "LIPSTICK MAKE B BROWN LIGHT",
+            "src": "./src/assets/images/user carousel/product - lipstick/lipstick-makeb-brown-light.jpg",
+            "alt": "Imagem de batom da linha Make B na cor marrom claro",
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus est temporibus, rerum odio ipsa reprehenderit?",
+            "link": "#"
+        },
+        {
+            "name": "Batom Make B Purple Dark",
+            "line": "Make B",
+            "title": "LIPSTICK MAKE B PURPLE DARK",
+            "src": "./src/assets/images/user carousel/product - lipstick/lipstick-makeb-purple-dark.jpg",
+            "alt": "Imagem de batom da linha Make B na cor roxo escuro",
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus est temporibus, rerum odio ipsa reprehenderit?",
+            "link": "#"
+        }
+        ]
+}]

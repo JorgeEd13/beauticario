@@ -1,0 +1,28 @@
+[{
+    "name": "image 01",
+    "class": "timed__carousel__img timed__carousel__img__active",
+    "src": "./src/assets/images/timmed carousel/generic-image01.jpeg",
+    "alt": "Promoção genérica para exemplo número 1",
+    "promotion": "#"
+},
+    {
+    "name": "image 02",
+    "class": "timed__carousel__img",
+    "src": "./src/assets/images/timmed carousel/generic-image02.jpeg",
+    "alt": "Promoção genérica para exemplo número 2",
+    "promotion": "#"
+},
+    {
+    "name": "image 03",
+    "class": "timed__carousel__img",
+    "src": "./src/assets/images/timmed carousel/generic-image03.jpeg",
+    "alt": "Promoção genérica para exemplo número 3",
+    "promotion": "#"
+},
+    {
+    "name": "image 04",
+    "class": "timed__carousel__img",
+    "src": "./src/assets/images/timmed carousel/generic-image04.jpeg",
+    "alt": "Promoção genérica para exemplo número 4",
+    "promotion": "#"
+}]
